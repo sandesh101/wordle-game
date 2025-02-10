@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131215;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.input-guess {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid #3A3B3D;
+    color: white;
+}
+
+#key-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 35%;
+}
+
+.guess-button {
+    height: 60px;
+    width: 40px;
+    background-color: #818384;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
