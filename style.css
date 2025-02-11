@@ -1,27 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
     margin: 0;
-    box-sizing: border-box;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: 'Courier New', Courier, monospace;
+body {
+    font-family: "VT323", serif;
     font-weight: 400;
     font-style: normal;
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
     align-items: center;
-    background-color: black;
+    background-color: #131215;
     color: white;
 }
 
-
-.container{
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,42 +27,39 @@ body{
     align-items: center;
 }
 
-.row{
+.row {
     margin-bottom: 10px;
 }
 
-.input-guess{
+.input-guess {
     height: 40px;
     width: 40px;
     background-color: transparent;
     border: 1px solid #3A3B3D;
     color: white;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
-#key-container{
+#key-container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    width: 30%;
+    width: 35%;
 }
 
-.guess-button{
-    height: 40px;
+.guess-button {
+    height: 60px;
     width: 40px;
+    background-color: #818384;
     border: none;
-    background-color: #818382;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.guess-button:hover{
-    cursor:pointer;
-}
-
-/* input[text]{
+input {
+    align-items: center;
     text-align: center;
-} */
+    justify-content: center;
+    text-transform: uppercase;
+}
