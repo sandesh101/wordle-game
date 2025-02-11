@@ -1,8 +1,8 @@
 let keyContainer=document.getElementById('key-container');
 let inputGuess = document.getElementsByClassName('input-guess');
+let row=document.getElementsByClassName('row')
 
-
-
+console.log(row)
 const keyboardLayout = [
     "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
     "A", "S", "D", "F", "G", "H", "J", "K", "L",
@@ -10,7 +10,8 @@ const keyboardLayout = [
 ];
 
 let guessWord = "Apple";
-
+let wordArray=guessWord.split('')
+console.log(wordArray)
 let button;
 let validGuess = 5;
 let rowFilled = 0;
@@ -36,9 +37,11 @@ keyboardLayout.forEach((character)=>{
         rowFilled += 1;
     }
     if(rowFilled === 1){
-        for(let i = 0; i< rowFilled; i++){
-            if(inputGuess[i].value === 'A'){
+        for(let i = 0; i<= rowFilled; i++){
+            
+            if(inputGuess[i].value.toUpperCase() === wordArray[i]){
                 console.log("Matched");
+                console.log(wordArray[i])
             }else{
                 console.log("error");
             }
