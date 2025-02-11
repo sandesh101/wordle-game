@@ -55,3 +55,5 @@ keyboardLayout.forEach((character) => {
         }
     });
 });
+
+//remainig
