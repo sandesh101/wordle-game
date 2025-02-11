@@ -56,3 +56,10 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+input {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
